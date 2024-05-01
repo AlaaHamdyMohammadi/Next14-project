@@ -1,6 +1,16 @@
 import React from 'react'
 
-const ProductDetails = ({params}: {params: {productID: string}}) => {
+interface ProductDetailsProps{
+  params: {productID: string}
+}
+
+export const generateMetadata = ({params}: ProductDetailsProps) => {
+  return {
+    title: `Product ${params.productID}`
+  }
+}
+
+const ProductDetails = ({params}: ProductDetailsProps) => {
   return (
     <div>ProductDetails for id : {params.productID}</div>
   )
