@@ -1,6 +1,10 @@
+import Link from "next/link";
 
 const Notifications = () => {
-    return <div>Notifications</div>
+    return <>
+        <span className="font-bold ">Notifications</span>
+        <Link href="/complex-dashboard/archived">Archived</Link>
+    </>
 }
 
 export default Notifications;
