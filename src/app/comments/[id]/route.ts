@@ -28,3 +28,5 @@ export async function DELETE(request: Request, {params}: {params: {id: string}})
     comments.splice(index, 1);
     return Response.json(deletedCommet);
 }
+
+
